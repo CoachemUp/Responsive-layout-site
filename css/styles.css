@@ -11,16 +11,24 @@
 body {
     margin: 0 auto;
     max-width: 1024px;
-     }
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #093145;
+}
 
 ul {
     list-style: none;
     padding-left: 0;
-   }
+}
 
 a {
     text-decoration: none;
-  }
+    text-transform: uppercase;
+    color: white;
+}
 
 nav {
     font-family: "Roboto", Arial, Verdana;
@@ -28,33 +36,33 @@ nav {
     letter-spacing: .05em;
     background-color: #829356;
     padding: 25px;
-    }
+}
 
 h1, .top-nav {
     text-align: center;
-    }
+}
       
 .top-nav, .top-nav li {
     width: 100%;
-    }
+}
       
 h1 a, .top-nav a {
     color: #000;
-    }
+}
 
 .top-nav {
     margin-top: 30px;
-    }
+}
       
 .top-nav li {
     padding: 10px 0;
     margin: 5px auto;
     background-color: #fff;
-    }
+}
       
 .top-nav a {
     text-transform: uppercase;
-    }
+}
 
 .container {
     max-width: 1100px;
@@ -73,32 +81,46 @@ h1 a, .top-nav a {
 }
 
 .box-1 {
-    background-color: #093145;
-  }
+    background-color: #1c04fc;
+}
   
-  .box-2 {
+.box-2 {
     background-color: #3C6478;
-  }
+}
   
-  .box-3 {
+.box-3 {
     background-color: #107896;
-  }
+}
   
-  .box-4 {
+.box-4 {
     background-color: #829356;
-  }
+}
   
-  .box-5 {
+.box-5 {
     background-color: #C2571A;
-  }
+}
   
-  .box-6 {
+.box-6 {
     background-color: #9A2617;
-  }
+}
 
-/* =======================================
-       Media Queries
-======================================= */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 20px;
+  height: 100px;
+  background-color: #107896;
+}
+
+.full {
+  display: none;
+}
+
+/* ====================================================
+       Media Queries for screens Less than 768px wide
+======================================================= */
 
 @media (min-width: 768px) {
     .top-nav {
@@ -128,16 +150,20 @@ h1 a, .top-nav a {
     .col {
         flex-basis: calc(50% - 20px);
     }
-  }
 
-  @media (min-width: 1024px) {
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .top {
+      display: none;
+    }
+
+    .full {
+      display: inline-block;
+      margin-left: 20px;
     }
   }
 
+/* =================================================
+       Media Queries for screens that are over 768px
+==================================================== */
   @media (min-width: 1024px) {
     nav {
       display: flex;
