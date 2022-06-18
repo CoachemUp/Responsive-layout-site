@@ -10,7 +10,6 @@
 
 body {
   margin: 0 auto;
-  max-width: 1024px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -81,18 +80,26 @@ nav {
     clear: both;
   }
 
-.container {
-    max-width: 1100px;
-    padding: 10px;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
-}
+  /* Project containers */
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-#portfolio {
-  text-transform: uppercase;
-  text-align: center;
-}
+  .project-box {
+    display: flex;
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis:  29%;
+  }
+
+  .project-image {
+    max-width: 50%;
+  }
+
+  .project-info {
+    margin-top: auto;
+  }
 
 
 
@@ -111,24 +118,6 @@ footer {
 /* ====================================================
        Media Queries for screens Less than 768px wide
 ======================================================= */
-@media (min-width: 1024px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .top-nav, 
-  .top-nav li {
-    width: initial;
-    margin-bottom: 0;
-    
-  }
-
-  .col {
-      flex-basis: calc(33.333% - 20px);
-  }
-}
 
 
 
