@@ -17,11 +17,12 @@ body {
   color: black;
   background-color: #e8ecef;
 }
-
+/* =======================================
+        Navbar styles
+======================================= */
 .navbar {
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: space-between; 
 }
 
 .top-nav {
@@ -55,6 +56,9 @@ nav {
   padding: 25px;
 }
 
+/* =======================================
+        Intro styles
+======================================= */
 .me {
   display: flex;
   justify-content: space-between;
@@ -75,7 +79,9 @@ nav {
 
 
 
-  /* Project containers styles*/
+  /* ===========================================
+      Project containers styles
+  ==============================================  */ 
 .portfolio {
   display: flex;
   margin:0 25px;
@@ -115,19 +121,21 @@ img {
 
 
 
-  /* Contact info styles*/
+  /* =====================================
+      Contact styles
+  ===================================== */
 .contact {
     display: flex;
     flex-direction: column;
-    margin:0 25px;
+    margin:0 220px;
     padding: 25px;
     justify-content: center;
     text-align: center;
    }
 
-
-
-
+  /* =====================================
+      Footer styles
+  ===================================== */
 footer {
   display: flex;
   justify-content: space-between;
@@ -135,7 +143,6 @@ footer {
   margin-top: auto;
   padding: 0 20px;
   height: 100px;
-  background-color: #C2571A;
 }
 
 
