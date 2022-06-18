@@ -64,7 +64,6 @@ nav {
 .intro {
   display: flex;
   justify-content: space-between;
-  
   padding: 25px;
 }
 
@@ -74,32 +73,58 @@ nav {
   padding: 25px;
 }
 
-  h5 {
-    padding: 5px;
-    text-transform: uppercase;
-    clear: both;
-  }
 
-  /* Project containers */
-  .projects {
+
+  /* Project containers styles*/
+.portfolio {
+  display: flex;
+  margin:0 25px;
+  padding: 25px;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: white;
+ }
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 25px 25px;
+  background-color: white;
+}
+
+.project-box {
+  padding: 2%;
+  flex-basis: 33%; 
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-info {
+     
+}
+.project-image {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+  /* Contact info styles*/
+.contact {
     display: flex;
-    flex-wrap: wrap;
-  }
+    flex-direction: column;
+    margin:0 25px;
+    padding: 25px;
+    justify-content: center;
+    text-align: center;
+   }
 
-  .project-box {
-    display: flex;
-    padding: 2%;
-    flex-grow: 1;
-    flex-basis:  29%;
-  }
-
-  .project-image {
-    max-width: 50%;
-  }
-
-  .project-info {
-    margin-top: auto;
-  }
 
 
 
