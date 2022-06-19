@@ -10,10 +10,11 @@
 
 body {
   margin: 0 auto;
+  max-width: 1024px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, Verdana;
   color: black;
   background-color: #e8ecef;
 }
@@ -34,7 +35,7 @@ ul {
   list-style: none;
 }
 
-.nav-link a {
+/*.nav-link*/ a {
   display: flex;
   padding: 0px 5px 0;
   text-transform: uppercase;
@@ -53,6 +54,7 @@ nav {
   font-family: "Roboto", Arial, Verdana;
   font-weight: 400;
   letter-spacing: .05em;
+  background-color: #829356;
   padding: 25px;
 }
 
@@ -150,6 +152,67 @@ footer {
 /* ====================================================
        Media Queries for screens Less than 768px wide
 ======================================================= */
+
+@media (min-width: 768px) {
+  .top-nav {
+    margin-top: 0px;
+  }
+
+  .nav-link a{
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+    background-color: transparent;
+  }
+
+  .top-nav li:last-child {
+    margin-right: 0;
+  }
+
+  .top-nav a {
+    color: rgb(96, 7, 7);
+  }
+
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .col {
+      flex-basis: calc(50% - 20px);
+  }
+
+  .top {
+    display: none;
+  }
+
+  .full {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+/* =================================================
+     Media Queries for screens that are over 768px
+==================================================== */
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top-nav, 
+  .top-nav li {
+    width: initial;
+    margin-bottom: 0;
+    
+  }
+
+  .col {
+      flex-basis: calc(33.333% - 20px);
+  }
+}
 
 
 
