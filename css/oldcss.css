@@ -35,15 +35,14 @@ ul {
   list-style: none;
 }
 
-/*.nav-link*/ a {
+/*.nav-link*/ 
+a {
   display: flex;
   padding: 0px 5px 0;
   text-transform: uppercase;
 }
 
-.nav-link a:hover {
-  background-color: #C2571A;
-}
+
 
 h1 a, .nav-link a {
   color: black;
@@ -84,22 +83,9 @@ nav {
   /* ===========================================
       Project containers styles
   ==============================================  */ 
-.portfolio {
-  display: flex;
-  margin:0 25px;
-  padding: 25px;
-  justify-content: center;
-  text-transform: uppercase;
-  background-color: white;
- }
 
-.projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 25px 25px;
-  background-color: white;
-}
+
+.
 
 .project-box {
   padding: 2%;
@@ -109,16 +95,6 @@ nav {
   text-align: center;
 }
 
-.project-info {
-     
-}
-.project-image {
-  max-width: 100%;
-}
-
-img {
-  max-width: 100%;
-}
 
 
 
