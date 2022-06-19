@@ -33,10 +33,10 @@
     font-family: "Roboto", Arial, Verdana;
     font-weight: 400;
     letter-spacing: .05em;
-    background-color: ##e8ecef;
+    background-color: #e8ecef;
     padding: 25px;
   }
-  
+
   ul a:hover {
     color: #C2571A;
   }
@@ -283,8 +283,8 @@
     }
   }
 
- ====================================================
+ /*==================================================
        Media Queries for screens Less than 768px wide
-=======================================================
+=======================================================*/
 
  
