@@ -1,0 +1,218 @@
+/* =======================================
+        Base styles
+======================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Roboto', Arial, Verdana;
+  color: black;
+  background-color: #e8ecef;
+}
+/* =======================================
+        Navbar styles
+======================================= */
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+/*.nav-link*/ a {
+  display: flex;
+  padding: 0px 5px 0;
+  text-transform: uppercase;
+}
+
+.nav-link a:hover {
+  background-color: #C2571A;
+}
+
+h1 a, .nav-link a {
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  font-family: "Roboto", Arial, Verdana;
+  font-weight: 400;
+  letter-spacing: .05em;
+  background-color: #829356;
+  padding: 25px;
+}
+
+/* =======================================
+        Intro styles
+======================================= */
+.me {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+
+
+  /* ===========================================
+      Project containers styles
+  ==============================================  */ 
+.portfolio {
+  display: flex;
+  margin:0 25px;
+  padding: 25px;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: white;
+ }
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 25px 25px;
+  background-color: white;
+}
+
+.project-box {
+  padding: 2%;
+  flex-basis: 33%; 
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-info {
+     
+}
+.project-image {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+  /* =====================================
+      Contact styles
+  ===================================== */
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin:0 220px;
+    padding: 25px;
+    justify-content: center;
+    text-align: center;
+   }
+
+  /* =====================================
+      Footer styles
+  ===================================== */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 20px;
+  height: 100px;
+}
+
+
+
+/* ====================================================
+       Media Queries for screens Less than 768px wide
+======================================================= */
+
+@media (min-width: 768px) {
+  .top-nav {
+    margin-top: 0px;
+  }
+
+  .nav-link a{
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+    background-color: transparent;
+  }
+
+  .top-nav li:last-child {
+    margin-right: 0;
+  }
+
+  .top-nav a {
+    color: rgb(96, 7, 7);
+  }
+
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .col {
+      flex-basis: calc(50% - 20px);
+  }
+
+  .top {
+    display: none;
+  }
+
+  .full {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+/* =================================================
+     Media Queries for screens that are over 768px
+==================================================== */
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top-nav, 
+  .top-nav li {
+    width: initial;
+    margin-bottom: 0;
+    
+  }
+
+  .col {
+      flex-basis: calc(33.333% - 20px);
+  }
+}
+
+
+
