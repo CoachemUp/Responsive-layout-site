@@ -47,7 +47,6 @@
   h1, .top-nav {
     text-align: center;
     text-transform: uppercase;
-    color: #C2571A;
   }
   
   .top-nav, .top-nav li {
@@ -182,6 +181,36 @@
     max-width: 100%;
     flex-grow: 1;
   }
+  .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+   
+    margin: 0 auto;
+  }
+
+  .work {
+    box-sizing: content-box;
+    width: 100%;
+    margin:10px;
+    padding: px;
+    justify-content: center;
+    text-transform: uppercase;
+    
+   }
+
+   .objective {
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    justify-content: center;
+    text-align: center;
+    color:rgb(5, 5, 5);
+    background-color: slategrey;
+   }
 
   .contact-container {
     display: flex;
@@ -246,6 +275,7 @@
     .top-nav a {
       color: black;
     }
+
     .me {
       display: flex;
       flex-direction: row;
@@ -269,6 +299,12 @@
        flex-basis: calc(50% - 20px);
        font-size: 1.1em;
     }  
+    
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 5px;
+  }
 
     .contact{
       padding: 0 150px;
