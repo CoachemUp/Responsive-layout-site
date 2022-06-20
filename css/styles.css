@@ -12,7 +12,7 @@
     min-height: 100vh;
     font-family: 'Roboto', Arial, Verdana;
     color: black;
-    background-color: #e8ecef;
+    background-color: #dcdee0;
   }
 
   ul {
@@ -38,7 +38,6 @@
     font-weight: 400;
     letter-spacing: .05em;
     padding: 25px;
-    background-color: darkgrey;
   }
 
   ul a:hover {
@@ -53,7 +52,6 @@
   
   .top-nav, .top-nav li {
     width: 100%;
-   
   }
   
   h1 a, .top-nav a {
@@ -61,6 +59,8 @@
   }
 
   .top-nav {
+    display: flex;
+    flex-direction: column;
     margin-top: 30px;
     letter-spacing: .05em;
   }
@@ -69,6 +69,7 @@
     display: inline;
     padding: 10px 10px;
     margin: 5px auto;
+    background-color: white;
   }
   
   .top-nav a {
@@ -76,22 +77,27 @@
   }
 
   img {
-    max-width: 100%;
+    max-width: 90%;
   }
   /* =======================================
         Intro styles
 ======================================= */
   .me {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin: 25px;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 10px;
    
   }
   
   .intro {
     display: flex;
     justify-content: space-between;
-    padding: 0 25px 0 0;
+    margin-top: 5px;
+    order: 5;
+    text-align: center;
   }
   
   .profile-image {
@@ -129,11 +135,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 250px;
+    min-height: 300px;
     color: rgb(7, 7, 7);
     text-align: center;
-    letter-spacing: 1px;
-    margin: 10px;  
+    font-size: 1em;
+    margin-bottom: 10px;
+    
   }
 
   .box-1 { 
@@ -142,7 +149,7 @@
     flex-direction: column;
     flex-grow: 1;
     max-width: 100%;
-    padding: 15px;
+   
   }
   
   .box-2 { 
@@ -151,7 +158,7 @@
     flex-direction: column;
     flex-grow: 1;
     max-width: 100%;
-    padding: 15px;
+   
   }
   
   .box-3 {  
@@ -160,7 +167,6 @@
     flex-direction: column;
     flex-grow: 1;
     max-width: 100%;
-    padding: 15px;
   }
   
   .box-4 {
@@ -169,7 +175,7 @@
     flex-direction: column;
     flex-grow: 1;
     max-width: 100%; 
-    padding: 15px;
+   
    }
   
   .box-5 {
@@ -178,7 +184,7 @@
     flex-direction: column;
     flex-grow: 1;
     max-width: 100%;
-    padding: 15px;
+    
   }
   
   .box-6 {
@@ -187,7 +193,7 @@
     flex-direction: column;
     max-width: 100%;
     flex-grow: 1;
-    padding: 15px;
+   
   }
 
   .contact-container {
@@ -205,8 +211,8 @@
   .contact {
     display: flex;
     flex-direction: column;
-    margin:0 220px;
-    padding: 0 25px 25px;
+    margin:0;
+   
     justify-content: center;
     text-align: center;
     color:blue;
@@ -223,7 +229,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto;
+    margin-top: 25px;
     padding: 25px;
     height: 100px;
     text-transform: uppercase;
@@ -234,44 +240,67 @@
     display: none;
   }
 /*====================================================
-       Media Queries for screens Less than 768px wide
+       Media Queries for 768px 
 ======================================================= */
   @media  (min-width: 768px) {
     .top-nav {
-      margin-top: 0;
+      display: flex;
+      flex-direction: row;
+      margin-top: auto;
+      padding: 25px;
+      justify-content:center;
     }
-  
+   
     .top-nav li {
-      display: inline-block;
-      width: auto;
-      margin-right: 15px;
-      background-color: transparent;
+      padding: px;
+      width: 100%;
+      margin-right: 5px auto;
+      background-color:transparent;
     }
   
     .top-nav li:last-child {
-      margin-right: 0;
+      margin-right: ;
     }
   
     .top-nav a {
-      color: #fff;
+      color: black;
     }
-
+    .me {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 25px 25px 25px;
+      align-items: center;
+     
+    }
+    .intro{
+      order: 0;
+      text-align: justify;
+    }
     .container {
         display: flex;
         flex-wrap: wrap;
-      }
+        margin: 5px;
+    }
     
-      .col {
-        flex-basis: calc(50% - 20px);
-      }  
+    .col {
+       flex-basis: calc(50% - 20px);
+       font-size: 1.1em;
+    }  
 
-      .top {
-        display: none;
-      }
-      .full {
-        display: inline-block;
-        margin-left: 20px;
-      }
+
+    .contact{
+      padding: 0 150px;
+    }
+
+
+    .top {
+      display: none;
+    }
+    .full {
+      display: inline-block;
+      margin-left: 20px;
+    }
   }
  /*====================================================
        Media Queries for screens 1024
@@ -288,7 +317,11 @@
       width: initial;
       margin-bottom: 0;
     }
+    .intro{
+      font-size: 25px;
+      
 
+    }
     .col {
       flex-basis: calc(33.333% - 20px);
     }
@@ -302,8 +335,6 @@
     }
   }
 
- /*==================================================
-       Media Queries for screens Less than 768px wide
-=======================================================*/
+
 
  
