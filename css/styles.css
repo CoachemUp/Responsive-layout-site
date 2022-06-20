@@ -196,7 +196,6 @@
     box-sizing: content-box;
     width: 100%;
     margin:10px;
-    padding: px;
     justify-content: center;
     text-transform: uppercase;
     
@@ -266,9 +265,8 @@
     }
    
     .top-nav li {
-      padding: px;
       width: 100%;
-      margin-right: 5px auto;
+      margin-right: 5px;
       background-color:transparent;
     }
   
